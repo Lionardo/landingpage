@@ -5,12 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="http://yomypopcorn.com/img/screenshot-1.png" />
     <title>YOMYPOPCORN - Never miss another episode</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Montserrat:700' type='text/css' />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
   </head>
 
   <body>
@@ -35,42 +37,46 @@
 
               <ol>
                 <li class="emerald">Install the <a href="https://www.justyo.co/">Yo App</a> on your phone</li>
-                <li class="peter">Send a Yo to <span class="little-bit-bigger">YOMYPOPCORN</span>&nbsp;<a class="js-animation" href="#"><small>show me how</small></a></li>
+                <li class="peter">Send a Yo to <span class="little-bit-bigger">YOMYPOPCORN</span></li>
                 <li class="asphalt">Subscribe to your favorite shows</li>
                 <li class="green">Receive a Yo when a new episode becomes available on PopcornTime</li>
               </ol>
             </div>
 
             <div class="social">
-              <div class="col-xs-4">
+              <div class="col-xs-4 social-twitter">
                 <a href="https://twitter.com/yomypopcorn"><i class="fa fa-twitter fa-3x"></i></a>
               </div>
 
-              <div class="col-xs-4">
+              <div class="col-xs-4 social-facebook">
                 <a href="https://www.facebook.com/yomypopcorn"><i class="fa fa-facebook-official fa-3x"></i></a>
               </div>
 
-              <div class="col-xs-4">
+              <div class="col-xs-4 social-github">
                 <a href="https://github.com/yomypopcorn/"><i class="fa fa-github fa-3x"></i></a>
               </div>
             </div>
           </div>
           <div class="col-md-5 col-md-pull-7 col-phone">
-            <div class="phone info-animation">
+            <div class="phone android">
               <div class="phone-screen">
-              <figure>
-                <img src="./img/screenshot-1.png" alt="" />
-                <img src="./img/screenshot-2.png" alt="" />
-                <img src="./img/screenshot-3.png" alt="" />
-              </figure>
+                <div class="screenshots">
+                  <div class="screenshot screenshot-1"></div>
+                  <div class="screenshot screenshot-2"></div>
+                  <div class="screenshot screenshot-3"></div>
+                </div>
               </div>
-            </div>
-            <div class="phone help-animation fadeOut">
-              <div class="phone-screen">
-              <div class="animation-container">
-                <i class="fa fa-long-arrow-right"></i>
-                <img src="img/how-to-static.png" alt="Static Image" data-alt="img/how-to.gif">
-              </div>
+              <div class="tutorial">
+                <div class="tutorial-start">
+                  <p><i class="fa fa-play-circle-o"></i></p>
+                </div>
+                <div class="tutorial-video">
+                  <video id="android-intro">
+                    <source src="videos/android.mp4" />
+                    <source src="videos/android.webm" />
+                    <source src="videos/android.ogv" />
+                  </video>
+                </div>
               </div>
             </div>
           </div>
@@ -92,7 +98,7 @@
         </div>
 
         <div class="col-md-4">
-          <h3>Can I unscubscribe again? </h3>
+          <h3>Can I unsubscribe again? </h3>
           <p>We'd be sad to see you go but you can certainly unsubscribe any time. Just unsubscribe or block YOMYPOPCORN in the Yo app and you'll never hear from us again. Promised.</p>
           <p>Yes, it's free.</p>
         </div>
@@ -102,12 +108,11 @@
 
       <footer>
         <p>Look, ma! &copy; copyrights!</p>
+        <p>Credits: Nexus 5 vector mockup by <a href="http://danishprakash.deviantart.com/art/Nexus-5-Vector-PSD-411692040">BenSow</a>, FlatPhone iPhone mockup by <a href="http://www.pixeden.com/psd-mock-up-templates/iphone-5-psd-flat-design-mockup">Pixeden</a>.</p>
       </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-    <script src="js/image-swap.js"></script>
-    <script src="js/load-gif.js"></script>
+    <script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
+    <script src="js/instructions-video.js"></script>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
